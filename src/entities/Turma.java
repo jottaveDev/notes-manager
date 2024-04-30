@@ -31,18 +31,6 @@ public class Turma {
         return alunos;
     }
 
-    public void adicionarNota(Aluno aluno, Double nota) {
-        notas.computeIfAbsent(aluno, k -> new ArrayList<>()).add(nota);
-    }
-
-    public Map<Aluno, List<Double>> getNotas() {
-        return notas;
-    }
-
-    public List<Double> getNotasAluno(Aluno aluno) {
-        return notas.get(aluno);
-    }
-
     public void imprimirNotasAlunos() {
         for (Aluno aluno : alunos) {
             System.out.println(aluno.toString());
@@ -50,10 +38,8 @@ public class Turma {
     }
 
     public void imprimirNotasAluno(Aluno aluno) {
-        List<Double> notasDoAluno = getNotasAluno(aluno);
-
-        if (notasDoAluno != null) {
-            System.out.println("Aluno " + aluno.getNome() + ": " + notasDoAluno);
+        if (aluno.getNotas() != null) {
+            System.out.println("Aluno " + aluno.getNome() + ": " + aluno.getNotas());
         } else {
             System.out.println("O aluno " + aluno.getNome() + " não tem notas");
         }

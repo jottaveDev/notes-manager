@@ -32,7 +32,8 @@ public class Teste {
         professor.adicionarNota(aluno3, 2.10);
         professor.adicionarNota(aluno3, 1.80);
         
-        turma.imprimirNotasAlunos();
+//        turma.imprimirNotasAlunos();
+        turma.imprimirNotasAluno(aluno3);
     }
 
 }
