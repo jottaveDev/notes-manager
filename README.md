@@ -1,10 +1,11 @@
 # notes-manager
 Sistema de gerenciamento de notas escolares. A solução perfeita para professores gerenciar suas turmas e alunos.
 
-# Funcionalidades
+### Funcionalidades
  - Cadastro de turmas
  - Cadastro de alunos
- - Registrar, consultar, editar, e excluir notas
+ - Registrar, consultar, editar, e excluir notas/alunos/turmas
 
-# Linguagem utilizada
-Java 17
+### Tecnologias utilizadas
+ - Java 17
+ - SQL
