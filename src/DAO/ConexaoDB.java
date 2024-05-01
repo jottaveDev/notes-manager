@@ -11,9 +11,9 @@ import java.sql.SQLException;
 public class ConexaoDB {
     
     private Connection con;     
-    private final String url ="jdbc:mariadb://srv1193.hstgr.io:3306/u464362699_mycrudjava";
-    private final String usuario ="u464362699_crudjava";
-    private final String password ="RouterL@1324";
+    private final String url ="jdbc:mariadb://srv1193.hstgr.io:3306/u464362699_a3projeto";
+    private final String usuario ="u464362699_A_Tres_ProjetO";
+    private final String password ="L9%x9texS$r+&P@";
     
     public Connection conectar(){
         try {
