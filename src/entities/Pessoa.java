@@ -2,11 +2,11 @@
 package entities;
 
 public class Pessoa {
-    private int id;
     private final String nome;
     private final String cpf;
-    private String dateBirth;
-    private String contact;
+    private String dataNascimento;
+    private String cidade;
+    private String estado;
     
     public Pessoa (String nome, String cpf) {
         this.nome = nome;
@@ -19,6 +19,30 @@ public class Pessoa {
 
     public String getCpf() {
         return cpf;
+    }
+
+    public String getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
     
 }
