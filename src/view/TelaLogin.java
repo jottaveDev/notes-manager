@@ -12,7 +12,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
     /**
      * Creates new form TelaLogin
-     */
+     */    
     public TelaLogin() {
         initComponents();
     }
@@ -44,7 +44,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
         jButton1.setText("jButton1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 153));
@@ -91,11 +91,6 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel3.setText("Senha:");
 
         senhaTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        senhaTextField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                senhaTextFieldActionPerformed(evt);
-            }
-        });
 
         mSenhajCheckBox1.setText("Mostrar senha ");
         mSenhajCheckBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -107,6 +102,11 @@ public class TelaLogin extends javax.swing.JFrame {
         loginjButton2.setBackground(new java.awt.Color(0, 153, 153));
         loginjButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         loginjButton2.setText("Login");
+        loginjButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginjButton2ActionPerformed(evt);
+            }
+        });
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/icons8-usuário-24.png"))); // NOI18N
         jLabel7.setText("jLabel7");
@@ -193,9 +193,11 @@ public class TelaLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_mSenhajCheckBox1ActionPerformed
 
-    private void senhaTextFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_senhaTextFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_senhaTextFieldActionPerformed
+    private void loginjButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginjButton2ActionPerformed
+        telaMenu tM = new telaMenu();        
+        tM.setVisible(true);  
+       
+    }//GEN-LAST:event_loginjButton2ActionPerformed
 
     /**
      * @param args the command line arguments
